@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КОЛОБОК</title>
+    <style>
+        @keyframes colobok {
+            from {
+                margin-left: 90%;
+                transform: rotate(0deg);
+            }
+            to {
+                margin-left: 0%;
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+
+            animation-name: colobok;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-delay: 1.5s;
+        }
+
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="1.png">
+</body>
+
+</html>
