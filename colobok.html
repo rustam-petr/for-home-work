@@ -11,20 +11,15 @@
                 margin-left: 90%;
                 transform: rotate(0deg);
             }
+
             to {
                 margin-left: 0%;
-                transform: rotate(360deg);
+                transform: rotate(calc(-360deg*2));
             }
         }
 
         img {
-
-            animation-name: colobok;
-            animation-duration: 10s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            animation-direction: alternate-reverse;
-            animation-delay: 1.5s;
+            animation: colobok 10s ease-in-out infinite alternate-reverse 0.5s;
         }
 
         body {
