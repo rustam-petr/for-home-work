@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КОЛОБОК</title>
     <style>
-        @keyframes colobok {
+        /*@keyframes colobok {
             from {
                 margin-left: 90%;
                 transform: rotate(0deg);
@@ -16,9 +16,23 @@
                 margin-left: 0%;
                 transform: rotate(calc(-360deg*2));
             }
+        }*/
+        @keyframes colobok {
+            from {
+                top: 0;
+                left: 0;
+                transform: rotate(0deg);
+            }
+
+            to {
+               top: calc(100vh - 200px);
+               left: calc(100vw - 200px);
+               transform: rotate(calc(-360deg*10));
+            }
         }
 
         img {
+            position: absolute;
             animation: colobok 10s ease-in-out infinite alternate-reverse 0.5s;
         }
 
