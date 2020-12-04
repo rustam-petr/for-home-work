@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01/12</title>
+  <style>
+    body {
+      background-image: url(img/fon.jpg);
+      position: absolute;
+      top: 200px;
+    }
+    .tut img {
+      width: 370px;
+      filter: drop-shadow(10px 10px 15px rgb(70, 70, 75));
+    }
+    @keyframes img {
+      from {
+        transform: translate(0px, 1000px)
+      }
+
+      to {
+        transform: translate(0px, 0px)
+      }
+    }
+    
+    #box1 {
+      animation: img 1s ;
+    }
+    #box2 {
+      animation: img 2s;
+    }
+    #box3 {
+      animation: img 3s;
+    }
+
+    #box4 {
+      animation: img 4s;
+    }
+
+    #box5 {
+      animation: img 5s;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="tut">
-        <img src="img/01.jpg" alt="Mercedes-Benz">
-        <img src="img/02.jpg" alt="Mercedes-Benz">
-        <img src="img/03.jpg" alt="Mercedes-Benz">
-        <img src="img/04.jpg" alt="Mercedes-Benz">
-        <img src="img/05.jpg" alt="Mercedes-Benz">
-    </div>
+  <div class="tut">
+    <img src="img/01.jpg" id="box1" alt="Mercedes-Benz">
+    <img src="img/02.jpg" id="box2" alt="Mercedes-Benz">
+    <img src="img/03.jpg" id="box3" alt="Mercedes-Benz">
+    <img src="img/04.jpg" id="box4" alt="Mercedes-Benz">
+    <img src="img/05.jpg" id="box5" alt="Mercedes-Benz">
+  </div>
 </body>
+
 </html>
