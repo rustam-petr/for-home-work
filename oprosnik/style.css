@@ -36,8 +36,19 @@ background-repeat: repeat-x;
     
 }
 .DOWN {
-
-margin: 250px 0 0 650px;
-
+    margin: 250px 0 0 650px;
+}
+.vopros {
+    /* background-image: url(27.jpg); */
+    background-size: 185px;
+    margin: 150px 0 0 650px;
+    font-family: 'Langar', cursive;
+}
+.uh{
+border-radius: 25px;
+outline: none;
+margin-left: 40px;
+height: 30px;
+width: 100px;
 
 }
